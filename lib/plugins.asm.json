@@ -20694,6 +20694,94 @@
           ]
         },
         {
+          "name": "deploy",
+          "description": "Deploy a package to an Azure Cloud Service2",
+          "fullName": "service deploy",
+          "usage": "[options]",
+          "filePath": "commands/asm/service._js",
+          "options": [
+            {
+              "flags": "-v, --verbose",
+              "required": 0,
+              "optional": 0,
+              "bool": true,
+              "short": "-v",
+              "long": "--verbose",
+              "description": "use verbose output"
+            },
+            {
+              "flags": "-vv",
+              "required": 0,
+              "optional": 0,
+              "bool": true,
+              "long": "-vv",
+              "description": "more verbose with debug output"
+            },
+            {
+              "flags": "--json",
+              "required": 0,
+              "optional": 0,
+              "bool": true,
+              "long": "--json",
+              "description": "use json output"
+            },
+            {
+              "flags": "-s, --subscription <id>",
+              "required": -20,
+              "optional": 0,
+              "bool": true,
+              "short": "-s",
+              "long": "--subscription",
+              "description": "the subscription id"
+            },
+            {
+              "flags": "-c, --cloudService",
+              "required": 1,
+              "optional": 0,
+              "bool": true,
+              "short": "-c",
+              "long": "--cloudService",
+              "description": "the name of the cloud service where to deploy the package"
+            },
+            {
+              "flags": "-d, --deploymentSlot",
+              "required": 1,
+              "optional": 0,
+              "bool": true,
+              "short": "-d",
+              "long": "--deploymentSlot",
+              "description": "staging or production"
+            },
+            {
+              "flags": "-p, --packageUrl",
+              "required": 1,
+              "optional": 0,
+              "bool": true,
+              "short": "-p",
+              "long": "--packageUrl",
+              "description": "the blob storage URL of the package to deploy"
+            },
+            {
+              "flags": "-f, --configFile",
+              "required": 1,
+              "optional": 0,
+              "bool": true,
+              "short": "-f",
+              "long": "--configFile",
+              "description": "the local path to the cloud service configuration file (.cspkg)"
+            },
+            {
+              "flags": "-l, --deploymentLabel",
+              "required": 1,
+              "optional": 0,
+              "bool": true,
+              "short": "-l",
+              "long": "--deploymentLabel",
+              "description": "the label of the cloud service deployment"
+            }
+          ]
+        },
+        {
           "name": "show",
           "description": "Show Azure cloud service",
           "fullName": "service show",
